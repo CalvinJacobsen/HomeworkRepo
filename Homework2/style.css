@@ -1,0 +1,18 @@
+.container {
+    max-width: 600px;
+    padding: 10px;
+    border: 10px double rgb(231, 80, 224);
+    background-color: rgba(26, 26, 26, 0.884);
+    margin: 200px auto auto auto;
+    color: cyan;
+}
+
+.aboutBody {
+    background-image: url('02-CSS-Bootstrap/Assets/websiteImages/wallpaperBackground.jpg')
+}
+.contactBody {
+    background-image: url('02-CSS-Bootstrap/Assets/websiteImages/wallpaperBackground.jpg')
+}
+.portfolioBody {
+    background-image: url('02-CSS-Bootstrap/Assets/websiteImages/wallpaperBackground.jpg')
+}
