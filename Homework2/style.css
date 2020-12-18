@@ -1,18 +1,75 @@
-.container {
-    max-width: 600px;
+.containerMain {
+    margin: 125px auto auto auto;
+    max-width: 540px;
+    padding: 15px;
+    border: 10px double rgba(245, 120, 228, 0.979);
+    background-color: rgba(51, 51, 51, 0.959);
+    color: rgb(12, 221, 221);
+}
+
+.containerBottomR {
+    margin: 453px auto auto auto;
     padding: 10px;
-    border: 10px double rgb(231, 80, 224);
-    background-color: rgba(26, 26, 26, 0.884);
-    margin: 200px auto auto auto;
-    color: cyan;
+    border: 10px double rgba(255, 252, 74, 0.979);
+    background-color: rgba(51, 51, 51, 0.945);
+    color: rgb(12, 221, 221);
+}
+
+.containerBottomL {
+    margin: 125px auto auto auto;
+    padding: 10px;
+    font-size: 16px;
+    border: 10px double rgba(74, 234, 255, 0.979);
+    background-color: rgba(51, 51, 51, 0.945);
+    color: rgb(243, 247, 39);
+}
+
+.contactContainer {
+    max-width: 500px;
+    padding: 15px;
+    border: 8px inset rgb(134, 235, 168);
+    background-color: rgba(51, 51, 51, 0.959);
+    margin: 125px auto auto auto;
+    color: rgb(240, 240, 240);
+}
+
+portFont {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 26px;
+    color:rgb(12, 221, 221);
+    font-style: italic;
+    
 }
 
 .aboutBody {
-    background-image: url('02-CSS-Bootstrap/Assets/websiteImages/wallpaperBackground.jpg')
+    background-image: url('Assets/websiteImages/aboutBG.jpg')
 }
+
 .contactBody {
-    background-image: url('02-CSS-Bootstrap/Assets/websiteImages/wallpaperBackground.jpg')
+    background-image: url('Assets/websiteImages/contactBG.png')
 }
+
 .portfolioBody {
-    background-image: url('02-CSS-Bootstrap/Assets/websiteImages/wallpaperBackground.jpg')
+    background-image: url('Assets/websiteImages/portfolioBG.gif')
+}
+
+.textWrap {
+    float: right;
+    margin: 10px;
+    margin-left: 30px;
+}
+
+.textWrapLeft{
+    float: left;
+    margin: 30px;
+    margin-right: 60px;
+    margin-top: 40px;
+}
+.breaker {
+    margin: 10px 15px 20px 15px;
+    
+}
+
+.orangeBoy:hover {
+    background-color: green;
 }
