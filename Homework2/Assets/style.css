@@ -132,10 +132,16 @@
     margin-top: 80px;
     margin-bottom: 40px;
     padding: 15px;
-    border: 2px solid rgba(245, 120, 228, 0.979);
+    border: 8px ridge rgba(245, 120, 228, 0.979);
     background-color: rgba(204, 204, 204, 0.938);
     color: rgb(92, 180, 240);
     font-family: 'Gloria Hallelujah', cursive;
+}
+.portfolioContainer2 {
+    margin-top: 300px;
+    padding-right: 40px;
+    border: 8px ridge rgba(120, 199, 245, 0.979);
+    background-color: rgba(204, 204, 204, 0.938);
 }
 
 .portfolioIMG {
