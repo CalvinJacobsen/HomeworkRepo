@@ -19,8 +19,12 @@ This is the second homework in the Fullstack coding bootcamp. In this Homework w
 Each of things have been completed.
 
 ## Screenshots
-Index page: ![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+Index page: ![Alt text](/assets/referenceImages/indexPage "Optional Title")
 
-Portfolio page: ![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+Portfolio page: ![Alt text](/assets/referenceImages/portfolioPage "Optional Title")
 
-Contact page: ![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+Contact page: ![Alt text](/assets/referenceImages/contactPage "Optional Title")
+
+## Link
+
+https://calvinjacobsen.github.io/Homework2/index.html
