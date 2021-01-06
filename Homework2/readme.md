@@ -37,7 +37,7 @@ Additionally, there is some more stuff that I would like to do with this website
 Each of things have been completed.
 
 ## Screenshots
-![Index Page](./Assets/referenceImages/indexPage.PNG "Index")
+![Index Page](./Assets/referenceImages/indexPage.PNG)
 
 ![Portfolio page](./Assets/referenceImages/portfolioPage.PNG)
 
