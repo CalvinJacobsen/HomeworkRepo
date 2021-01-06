@@ -37,11 +37,11 @@ Additionally, there is some more stuff that I would like to do with this website
 Each of things have been completed.
 
 ## Screenshots
-![Index Page](./Assets/referenceImages/indexPage.png "Index")
+![Index Page](./Assets/referenceImages/indexPage.PNG "Index")
 
-![Portfolio page](./Assets/referenceImages/portfolioPage.png "Portfolio")
+![Portfolio page](./Assets/referenceImages/portfolioPage.PNG)
 
-![Contact page](./Assets/referenceImages/contactPage.png "Contact")
+![Contact page](./Assets/referenceImages/contactPage.PNG)
 
 ## Link to website below
 
