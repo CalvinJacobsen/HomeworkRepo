@@ -37,11 +37,11 @@ Additionally, there is some more stuff that I would like to do with this website
 Each of things have been completed.
 
 ## Screenshots
-![Index Page](https://github.com/calvinjacobsen/Calvinjacobsen.github.io/Homework2/referenceImages/indexPage.png "Index")
+![Index Page](./Assets/referenceImages/indexPage.png "Index")
 
-![Portfolio page](https://github.com/calvinjacobsen/Calvinjacobsen.github.io/Homework2/referenceImages/portfolioPage.png "Portfolio")
+![Portfolio page](./Assets/referenceImages/portfolioPage.png "Portfolio")
 
-![Contact page](https://github.com/calvinjacobsen/Calvinjacobsen.github.io/Homework2/referenceImages/contactPage.png "Contact")
+![Contact page](./Assets/referenceImages/contactPage.png "Contact")
 
 ## Link to website below
 
