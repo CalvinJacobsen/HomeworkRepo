@@ -37,10 +37,10 @@ Each of these criteria are met...
 
 ## Screenshot of working website
 
-![Before password generation](./Assets/websiteImages/beforePasswordGeneration "Before")
+![Before password generation](./Assets/websiteImages/beforePasswordGeneration.PNG)
 
-![After password generation](./Assets/websiteImages/afterPasswordGeneration.png "After")
+![After password generation](./Assets/websiteImages/afterPasswordGeneration.PNG)
 
 ## Link to website
 
-URL: https://calvinjacobsen.github.io/Homework3/develop/index.html
+URL: https://calvinjacobsen.github.io/Homework3/Develop/index.html
