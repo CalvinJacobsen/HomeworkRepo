@@ -1,0 +1,56 @@
+body {
+    background-color: #fb5454
+  }
+  
+  .question {
+    text-align: left;
+    font-size: 34px;
+    font-weight: 700;
+  }
+  
+  .container {
+    display: block;
+    margin: 80px auto;
+    text-align: center;
+    transition: 0.3s;
+    width: 60vw;
+    background-color: #fffffffd;
+  }
+
+  .opener {
+      text-align: center;
+      margin:15px;
+      font-size: 34px;
+  }
+  
+  .wrapper {
+    padding-top: 20px;
+  }
+  
+  .card-contents {
+    padding: 5px 5px 10px 5px;
+  }
+  
+  button {
+    padding: 7px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #2a2dff;
+    color: white;
+    border-radius: 5px;
+    
+  }
+
+  .optionButton {
+    display:none;
+    text-align: left;
+  }
+
+  .timer {
+      text-align: right;
+      margin-right :2%;
+      padding: 0%;
+      font-size: 20px;
+  }
+  

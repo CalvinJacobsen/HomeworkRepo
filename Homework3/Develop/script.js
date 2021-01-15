@@ -124,6 +124,7 @@ function generatePassword() {
       validPW = true;
     }
   }
+  
   return password.join("");
 }
 
