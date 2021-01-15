@@ -6,6 +6,7 @@ body {
     text-align: left;
     font-size: 34px;
     font-weight: 700;
+    margin: 20px;
   }
   
   .container {
@@ -42,6 +43,10 @@ body {
     
   }
 
+  .gameOver {
+    display: none;
+  }
+  
   .optionButton {
     display:none;
     text-align: left;

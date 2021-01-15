@@ -6,8 +6,13 @@ var button4El = document.querySelector("#button4");
 var timerEl = document.querySelector("#timer");
 var introCard = document.querySelector("#introCard");
 var questionText = document.querySelector("#questionNumber");
+var correctPrompt = document.querySelector("#correctPrompt");
+var wrongPrompt = document.querySelector("#wrongPrompt");
+var gameOver = document.querySelector("#gameOver");
+var score = document.querySelector("#score");
 
-
+numberCorrect = 0;
+var i = 0;
 //starts countdowntimer on start button click
 startEl.addEventListener("click", function () {
 
@@ -22,9 +27,22 @@ startEl.addEventListener("click", function () {
     //start timer
     timeLeft = 74;
     var downloadTimer = setInterval(function () {
-        if (timeLeft <= 0) {
+
+        if (timeLeft <= 0 || i == 16) {
             clearInterval(downloadTimer);
-            document.getElementById("timer").innerHTML = "TIME UP!";
+            document.getElementById("timer").innerHTML = "TIME!";
+            button1El.style.display = "none";
+            button2El.style.display = "none";
+            button3El.style.display = "none";
+            button4El.style.display = "none";
+            questionText.style.display = "none";
+            wrongPrompt.style.display = "none";
+            correctPrompt.style.display = "none";
+            gameOver.style.display = "block";
+
+            //set the final score based on Timeleft and number of correct questions
+            var finalScore = timeLeft + numberCorrect;
+            document.getElementById("score").innerHTML = finalScore;
         }
         else {
             document.getElementById("timer").innerHTML = timeLeft + " s";
@@ -143,7 +161,7 @@ var questions = [
         option2: "Tatl", //marjora's mask fairy correct
         option3: "Navi", //Ocarina of time
         option4: "Ciela", //phantom hour glass
-        correct: "Tatl", 
+        correct: "Tatl",
     },
     {
         question: "In which Metroid game does Dark Samus first make their appearance?",
@@ -172,26 +190,39 @@ var questions = [
 ];
 //end array of question objects
 
+//button listener
 startEl.addEventListener("click", function () {
 
-    for (var i = 0; i < 15; i++) {
-        document.getElementById("questionNumber").innerHTML = questions[i].question;
-
-        button1El.addEventListener("click", function () {
-            if 
-        });
-        button2El.addEventListener("click", function () {
-
-        });
-        button3El.addEventListener("click", function () {
-
-        });
-        button4El.addEventListener("click", function () {
-
-        });
-    }
-
+    document.getElementById("questionNumber").innerHTML = questions[i].question;
+    document.getElementById("button1").innerHTML = questions[i].option1;
+    document.getElementById("button2").innerHTML = questions[i].option2;
+    document.getElementById("button3").innerHTML = questions[i].option3;
+    document.getElementById("button4").innerHTML = questions[i].option4;
 });
+
+//checking to see if value is correct or incorrect
+$(".optionButton").on("click", function () {
+
+    var selectedItem = $(this).text();
+    console.log(i);
+    if (questions[i].correct == selectedItem) {
+        wrongPrompt.style.display = "none";
+        correctPrompt.style.display = "block";
+        numberCorrect += 1;
+    }
+    else {
+        wrongPrompt.style.display = "block";
+        correctPrompt.style.display = "none";
+        timeLeft -= 10;
+    }
+    i += 1;
+    document.getElementById("questionNumber").innerHTML = questions[i].question;
+    document.getElementById("button1").innerHTML = questions[i].option1;
+    document.getElementById("button2").innerHTML = questions[i].option2;
+    document.getElementById("button3").innerHTML = questions[i].option3;
+    document.getElementById("button4").innerHTML = questions[i].option4;
+});
+
 
 
 
