@@ -5,13 +5,15 @@ body {
 }
 
 textarea{
-  background: transparent;
+  background: rgb(170, 170, 170);
   border: none;
   resize: none;
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
 }
+
+
 
 .jumbotron {
   text-align: center;
@@ -62,6 +64,7 @@ textarea{
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
+  border-left: 5px solid  #047e99;
   color: white;
 }
 

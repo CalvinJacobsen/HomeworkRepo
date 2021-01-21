@@ -22,4 +22,4 @@ website example img:
 
 ![day planner demo](./Assets/)
 
-Website URL: https://www.calvinjacobsen.github.io/Homework5/Develop/index.html
+Website URL: https://calvinjacobsen.github.io/Homework5/Develop/index.html
