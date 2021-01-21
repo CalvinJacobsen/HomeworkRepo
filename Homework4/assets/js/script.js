@@ -10,6 +10,9 @@ var correctPrompt = document.querySelector("#correctPrompt");
 var wrongPrompt = document.querySelector("#wrongPrompt");
 var gameOver = document.querySelector("#gameOver");
 var score = document.querySelector("#score");
+var highscore = document.querySelector("#highscore")
+var initials = document.querySelector("#initials")
+var retryEl = document.querySelector("#retryButton")
 
 numberCorrect = 0;
 var i = 0;
@@ -31,6 +34,8 @@ startEl.addEventListener("click", function () {
         if (timeLeft <= 0 || i == 16) {
             clearInterval(downloadTimer);
             document.getElementById("timer").innerHTML = "TIME!";
+
+            //removing and revealing items
             button1El.style.display = "none";
             button2El.style.display = "none";
             button3El.style.display = "none";
@@ -39,9 +44,13 @@ startEl.addEventListener("click", function () {
             wrongPrompt.style.display = "none";
             correctPrompt.style.display = "none";
             gameOver.style.display = "block";
+            initials.style.display = "block";
 
             //set the final score based on Timeleft and number of correct questions
             var finalScore = timeLeft + numberCorrect;
+            if(finalScore < 0){
+                finalScore = 0;
+            }
             document.getElementById("score").innerHTML = finalScore;
         }
         else {
@@ -50,7 +59,6 @@ startEl.addEventListener("click", function () {
         timeLeft -= 1;
     }, 1000);
 });
-
 
 //array of question obejcts below
 var questions = [
@@ -223,6 +231,6 @@ $(".optionButton").on("click", function () {
     document.getElementById("button4").innerHTML = questions[i].option4;
 });
 
-
-
-
+retryEl.addEventListener("click", function () {
+    
+});

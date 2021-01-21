@@ -18,6 +18,10 @@ body {
     background-color: #fffffffd;
   }
 
+  .container2 {
+    
+  }
+
   .opener {
       text-align: center;
       margin:15px;
@@ -46,7 +50,7 @@ body {
   .gameOver {
     display: none;
   }
-  
+
   .optionButton {
     display:none;
     text-align: left;
