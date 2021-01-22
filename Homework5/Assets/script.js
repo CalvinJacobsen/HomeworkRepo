@@ -32,7 +32,7 @@ function renderColorTime() {
             $(this).addClass("future")
             $(this).removeClass("past present");
         }
-    
+
     });
 };
 
@@ -41,7 +41,7 @@ toDoObjArray = [];
 
 //putting each object that we have so far into our object
 function objectSchedule() {
-    
+
     $textbox.each(function () {
         var blockHour = parseInt($(this).attr("hour-id"));
 
@@ -52,26 +52,34 @@ function objectSchedule() {
 
         //this function puts our objects into the array we made
         toDoObjArray.push(toDoObjects);
-    }); 
-    
+    });
+    localStorage.setItem("todos", JSON.stringify(toDoObjArray));
 }
 
 
 //saves the data locally
-function localStorage(){
+function localStorage() {
 
     //see which item we need to update based on the hour of the button clicked matching
-    for (var j = 0; j < toDoObjArray.length; j++){
-      if (toDoObjArray[j].hour == hourToUpdate){
-        //set its text to what was added to textarea
-        toDoObjArray[j].text = itemToAdd;
-      }
+    for (var j = 0; j < toDoObjArray.length; j++) {
+        if (toDoObjArray[j].hour == hourToUpdate) {
+            //set its text to what was added to textarea
+            toDoObjArray[j].text = itemToAdd;
+        }
     }
     localStorage.setItem("todos", JSON.stringify(toDoObjArray));
     renderSchedule();
-  }
+}
 
+//gets our shit READY
+$(document).ready(function () {
+    //does the color thing
+    renderColorTime();
 
-renderColorTime();
-objectSchedule();
-$schedule.on("click", "button", localStorage)
+    if(!localStorage.getItem("todos")){
+        objectSchedule()
+    }
+    $currentDay.append(currentDate);
+    objectSchedule();
+    $schedule.on("click", "button", localStorage)
+}
