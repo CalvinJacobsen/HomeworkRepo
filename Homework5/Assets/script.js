@@ -1,4 +1,3 @@
-var $currentDay = $(".currentDay");
 var $timeRows = $(".time-block");
 var $scheduleArea = $(".schedule");
 var $textbox = $(".textbox");
@@ -56,7 +55,6 @@ function objectSchedule() {
     localStorage.setItem("todos", JSON.stringify(toDoObjArray));
 }
 
-
 //saves the data locally
 function localStorage() {
 
@@ -71,15 +69,16 @@ function localStorage() {
     renderSchedule();
 }
 
-//gets our shit READY
+//gets our stuff READY and runs Necessary functions!
 $(document).ready(function () {
     //does the color thing
     renderColorTime();
+    //sets our d/te for us
+    $("#currentDay").text(currentDate);
 
-    if(!localStorage.getItem("todos")){
+    //checks to see if the local storage is Empty!@
+    if (!localStorage.getItem("todos")) {
         objectSchedule()
     }
-    $currentDay.append(currentDate);
-    objectSchedule();
-    $schedule.on("click", "button", localStorage)
-}
+    
+});

@@ -20,6 +20,6 @@ This website was created by me except for starter code for the title card up abo
 
 website example img:
 
-![day planner demo](./Assets/)
+![day planner](./Assets/capture.png)
 
 Website URL: https://calvinjacobsen.github.io/Homework5/Develop/index.html
