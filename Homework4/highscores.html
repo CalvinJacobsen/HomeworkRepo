@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nintendo Quiz</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -16,10 +17,20 @@
 
     <div class="wrapper">
         <div class="container2">
-            <div class="card-contents">
+            <div class="card-contents2">
 
-                <input type="text" id="init" name="initials">
-                <button type="submit" value="Submit" id="sumbitButton" formaction="highscores.html">submit</button>
+                <img src="./assets/images/highscore.jpg" width="55%">
+                <ol style="margin-top:30px" id="OL">
+                    
+                </ol>
+
+                <!--retry button-->
+                <form action="retry">
+                <button id="retryButton" formaction="index.html">Retry</button>
+                </form>
+
+                <!--reset the highscore button-->
+                <button id="resetHSButton">Reset Highscores</button>
 
             </div>
         </div>

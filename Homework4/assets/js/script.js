@@ -10,11 +10,17 @@ var correctPrompt = document.querySelector("#correctPrompt");
 var wrongPrompt = document.querySelector("#wrongPrompt");
 var gameOver = document.querySelector("#gameOver");
 var score = document.querySelector("#score");
-var highscore = document.querySelector("#highscore")
-var initials = document.querySelector("#initials")
-var retryEl = document.querySelector("#retryButton")
+var submitButtonEl = document.querySelector("#sumbitButton");
+var initials = document.querySelector("#initials");
+var initialsBox = document.querySelector("#init");
+//highscore hmtl;
+var retryEl = document.querySelector("#retryButton");
+var resetHSEl = document.querySelector("#resetHSButton");
+var listEl = document.querySelector("#OL");
 
-numberCorrect = 0;
+
+
+var numberCorrect = 0;
 var i = 0;
 //starts countdowntimer on start button click
 startEl.addEventListener("click", function () {
@@ -48,7 +54,7 @@ startEl.addEventListener("click", function () {
 
             //set the final score based on Timeleft and number of correct questions
             var finalScore = timeLeft + numberCorrect;
-            if(finalScore < 0){
+            if (finalScore < 0) {
                 finalScore = 0;
             }
             document.getElementById("score").innerHTML = finalScore;
@@ -212,7 +218,7 @@ startEl.addEventListener("click", function () {
 $(".optionButton").on("click", function () {
 
     var selectedItem = $(this).text();
-    console.log(i);
+
     if (questions[i].correct == selectedItem) {
         wrongPrompt.style.display = "none";
         correctPrompt.style.display = "block";
@@ -224,6 +230,8 @@ $(".optionButton").on("click", function () {
         timeLeft -= 10;
     }
     i += 1;
+
+    //display next question
     document.getElementById("questionNumber").innerHTML = questions[i].question;
     document.getElementById("button1").innerHTML = questions[i].option1;
     document.getElementById("button2").innerHTML = questions[i].option2;
@@ -231,6 +239,12 @@ $(".optionButton").on("click", function () {
     document.getElementById("button4").innerHTML = questions[i].option4;
 });
 
-retryEl.addEventListener("click", function () {
-    
+//submit function
+$("#submitButton").click(function () {
+
+    var initialsplace = initialsBox.text();
+    console.log(initialsplace);
+    localStorage.getItem(initials)
+    //initials.textContent.
 });
+

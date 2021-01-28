@@ -1,5 +1,6 @@
+
 body {
-    background-color: #fb5454
+    background-color: #f11212
   }
   
   .question {
@@ -19,7 +20,12 @@ body {
   }
 
   .container2 {
-    
+    display: block;
+    margin: 80px auto;
+    text-align: center;
+    transition: 0.3s;
+    width: 30vw;
+    background-color: #fffffffd;
   }
 
   .opener {
@@ -35,11 +41,16 @@ body {
   .card-contents {
     padding: 5px 5px 10px 5px;
   }
+
+  .card-contents2 {
+    padding: 10px 80px 50px 70px;
+  }
   
   button {
     padding: 7px;
     margin: 10px;
     cursor: pointer;
+    border: solid rgb(22, 22, 230);
     font-size: 20px;
     background-color: #2a2dff;
     color: white;
